@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">boomer</string>
+    <string name="hello_world">COMIN</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_boomer_view">BoomerViewActivity</string>
+    <string name="title_section1">Boomers you sent</string>
+    <string name="title_section2">Boomers you got</string>
+    <string name="title_section3">Boomers near you</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="title_activity_boomer_edit">BoomerEditActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_upload">UploadActivity</string>
+    <string name="image_description">image description</string>
+
+</resources>
