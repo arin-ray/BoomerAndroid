@@ -114,7 +114,7 @@ public class ChatActivity extends Activity {
             params.add(new BasicNameValuePair("to", bundle.getString("mobno")));
             params.add((new BasicNameValuePair("msg",chat_msg.getText().toString())));
 
-            JSONObject jObj = json.getJSONFromUrl("http://192.168.0.15:8080/send",params);
+            JSONObject jObj = json.getJSONFromUrl("http://IP_ADD/send",params);
             return jObj;
 
 
