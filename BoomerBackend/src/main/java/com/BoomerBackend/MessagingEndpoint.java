@@ -10,7 +10,6 @@ import com.google.api.server.spi.config.ApiNamespace;
 import java.io.IOException;
 import java.util.List;
 import java.util.logging.Logger;
-
 import javax.inject.Named;
 
 import static com.BoomerBackend.OfyService.ofy;
