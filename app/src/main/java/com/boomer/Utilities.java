@@ -1,11 +1,11 @@
 package com.boomer;
 
-import android.os.Environment;
-import android.util.Log;
-
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
+import android.os.Environment;
+import android.util.Log;
 
 public class Utilities {
 	public static File getOutputMediaFile() {

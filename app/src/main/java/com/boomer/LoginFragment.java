@@ -70,7 +70,7 @@ public class LoginFragment extends Fragment {
 
 //            JSONObject jObj = json.getJSONFromUrl("http://37f4f661.ngrok.com/login",params);
 
-            JSONObject jObj = json.getJSONFromUrl("http://192.168.0.12:8080/login",params);
+            JSONObject jObj = json.getJSONFromUrl("http://IP/login",params);
             return jObj;
 
 
