@@ -96,21 +96,20 @@ exports.getfriends = function(name, callback) {
 
 
 
-exports.removeuser = function(nick,callback) {
+exports.removeuser = function(reg_id,callback) {
 
-user.remove({nick:nick},function(err,users){
+    user.remove({reg_id:reg_id},function(err,users){
 
-	if(!err){
+      if(!err){
 
-		callback({'response':"Removed Sucessfully"});
-	}else{
-		callback({'response':"Error"});
-	}
-});
+      	callback({'response':"Removed Sucessfully"});
+      }else{
+      	callback({'response':"Error"});
+      }
+    });
 }
 
 exports.addfriend = function(reg_id,friend,callback) {
- // console.log("searching with: "+reg_id)
  var friendID;
  var friendName;
  fetchId(friend, function(err, user) {
@@ -127,7 +126,6 @@ user.update({reg_id: reg_id},
   {$push: { 'friends' : friend }},{upsert:true}, function(err, data) { 
       callback({'response':'now friends with '+friend});
 });
-
 
 }
 

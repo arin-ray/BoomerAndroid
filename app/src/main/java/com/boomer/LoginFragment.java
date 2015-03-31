@@ -68,8 +68,6 @@ public class LoginFragment extends Fragment {
             params.add(new BasicNameValuePair("nick", nick.getText().toString()));
             params.add((new BasicNameValuePair("reg_id",prefs.getString("REG_ID",""))));
 
-//            JSONObject jObj = json.getJSONFromUrl("http://37f4f661.ngrok.com/login",params);
-
             JSONObject jObj = json.getJSONFromUrl("http://IP/login",params);
             return jObj;
 

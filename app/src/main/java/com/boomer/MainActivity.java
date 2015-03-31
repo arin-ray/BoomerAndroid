@@ -78,45 +78,6 @@ public class MainActivity extends Activity {
             Toast.makeText(getApplicationContext(), "This device is not supported", Toast.LENGTH_SHORT).show();
         }
 
-        // Create an instance of Camera
-//        mCamera = getCameraInstance();
-//
-//        Camera.Parameters parameters = mCamera.getParameters();
-//
-//        setCameraDisplayOrientation(this, CAMERA_FACING_BACK, mCamera);
-//        mPreview = new CameraPreview(this, mCamera);
-//        FrameLayout frameLayout = (FrameLayout) findViewById(R.id.camera_preview);
-//        frameLayout.addView(mPreview);
-//
-//        RelativeLayout relativeLayoutControls = (RelativeLayout) findViewById(R.id.controls_layout);
-//
-//        relativeLayoutControls.bringToFront();
-//
-//        swipeBar = (ImageButton) findViewById(R.id.bottomBar);
-//        swipeBar.setOnClickListener(new View.OnClickListener() {
-//
-//            @Override
-//            public void onClick(View arg0) {
-//                //edit.setVisibility(View.VISIBLE);
-//               Animation slideUpIn = AnimationUtils.loadAnimation(swipeBar.getContext(), R.anim.slide_up);
-//                swipeBar.startAnimation(slideUpIn);
-//
-//                Intent intent = new Intent(MainActivity.this, BoomerViewActivity.class);
-//                startActivity(intent);
-//                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
-//            }
-//
-//        });
-//
-//        captureButton = (ImageButton) findViewById(R.id.cap_button);
-//        captureButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View arg0) {
-//                Intent intent = new Intent(MainActivity.this,BoomerEditActivity.class);
-//                startActivity(intent);
-//            }
-//
-//        });
     }
 
     public static void setCameraDisplayOrientation(Activity activity,

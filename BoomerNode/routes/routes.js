@@ -99,10 +99,10 @@ module.exports = function(app) {
 	});
 
 	app.post('/logout',function(req,res){
-		var mobno = req.body.mobno;
+		var reg_id = req.body.reg_id;
 
 			
-		requests.removeuser(mobno,function (found) {
+		requests.removeuser(reg_id,function (found) {
 			console.log(found);
 			res.json(found);
 		});		
