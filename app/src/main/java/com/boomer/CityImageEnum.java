@@ -1,5 +1,5 @@
 package com.boomer;
-
+// used to temporarily hardcode images
 public enum CityImageEnum {
 
 	NEW_YORK("New York",R.drawable.new_york),
