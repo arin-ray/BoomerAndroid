@@ -24,6 +24,7 @@ import java.util.List;
 
 
 public class LoginFragment extends Fragment {
+    private String API_SERVER = "";
     SharedPreferences prefs;
     EditText name, nick;
     Button login;
@@ -68,7 +69,7 @@ public class LoginFragment extends Fragment {
             params.add(new BasicNameValuePair("nick", nick.getText().toString()));
             params.add((new BasicNameValuePair("reg_id",prefs.getString("REG_ID",""))));
 
-            JSONObject jObj = json.getJSONFromUrl("http://IP/login",params);
+            JSONObject jObj = json.getJSONFromUrl(API_SERVER+"/login",params);
             return jObj;
 
 

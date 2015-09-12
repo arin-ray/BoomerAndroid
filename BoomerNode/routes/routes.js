@@ -1,4 +1,4 @@
-var requests = require('requests');
+var requests = require('./reqs');
 var request = require('request');
 var fs = require('fs');
 

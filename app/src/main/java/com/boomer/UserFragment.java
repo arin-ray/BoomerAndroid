@@ -30,6 +30,7 @@ import java.util.List;
 
 public class UserFragment extends Fragment {
     private ListView list;
+    private String API_SERVER = "";
     ArrayList<HashMap<String, String>> users = new ArrayList<HashMap<String, String>>();
     private List<Model> friends = new ArrayList<Model>();
     Button refresh,logout,friendFrag,map,uploadboomer,camera;
@@ -123,7 +124,7 @@ public class UserFragment extends Fragment {
             params = new ArrayList<NameValuePair>();
             params.add(new BasicNameValuePair("nick", prefs.getString("REG_FROM","")));
             //Log.i("LGOUT", "Loggging out");
-            JSONArray jAry = json.getJSONArray("http://192.168.0.12:8080/getusers",params);
+            JSONArray jAry = json.getJSONArray(API_SERVER+"/getusers",params);
 
            // Log.i("LOADING", jAry.toString());
 
@@ -148,7 +149,7 @@ public class UserFragment extends Fragment {
                 }
 
             }
-            //String friends[] = {"joe", "dave", "moe", "bitchkilla"};
+
 
             // init list adapter
             //adapter = new ArrayAdapter<String>(getActivity(), R.layout.list_item, R.id.friend_name,friends);
@@ -189,7 +190,7 @@ public class UserFragment extends Fragment {
             JSONParser json = new JSONParser();
             params = new ArrayList<NameValuePair>();
             params.add(new BasicNameValuePair("nick", prefs.getString("REG_FROM","")));
-            JSONObject jObj = json.getJSONFromUrl("http://1b5edeee.ngrok.com/logout",params);
+            JSONObject jObj = json.getJSONFromUrl("http://6eef6e0b.ngrok.com/logout",params);
 
             return jObj;
         }
